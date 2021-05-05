@@ -1,14 +1,10 @@
 {
-  "name": "helioslauncher",
+  "name": "onihuralauncher",
   "version": "1.8.0",
-  "productName": "Helios Launcher",
+  "productName": "OniHura Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "Daniel Scalzi (https://github.com/dscalzi/)",
+  "author": "OniHuraTeam (https://github.com/OniHulaTeam/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/dscalzi/HeliosLauncher",
-  "bugs": {
-    "url": "https://github.com/dscalzi/HeliosLauncher/issues"
-  },
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -30,6 +26,7 @@
     "discord-rpc": "^3.1.4",
     "ejs": "^3.1.5",
     "ejs-electron": "^2.1.1",
+    "electron-packager": "^15.2.0",
     "electron-updater": "^4.3.4",
     "fs-extra": "^9.0.1",
     "github-syntax-dark": "^0.5.0",
@@ -47,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dscalzi/HeliosLauncher.git"
+    "url": "git+https://github.com/OniHulaTeam/OniHulaLancher.git"
   }
 }
