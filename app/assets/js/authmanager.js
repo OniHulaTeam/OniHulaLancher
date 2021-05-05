@@ -87,13 +87,13 @@ exports.validateSelected = async function(){
             if(err && err.error === 'ForbiddenOperationException'){
                 // What do we do?
             }
-            logger.log('Account access token is invalid.')
+            logger.log('アカウントアクセストークンが無効です。')
             return false
         }
-        loggerSuccess.log('Account access token validated.')
+        loggerSuccess.log('アカウントアクセストークンが検証されました。')
         return true
     } else {
-        loggerSuccess.log('Account access token validated.')
+        loggerSuccess.log('アカウントアクセストークンが検証されました。')
         return true
     }
 }
