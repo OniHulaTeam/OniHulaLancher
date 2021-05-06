@@ -13,14 +13,14 @@
         {
             "id": "2b2t-client-1.12.2",
             "name": "2b2t-client",
-            "description": "New 1.12.2 production server.",
-            "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
+            "description": "2b2tで使えるクライアントです",
+            "icon": "data:image/jpeg;base64,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",
             "version": "4.6.4",
-            "address": "mc.westeroscraft.com:25565",
+            "address": "2b2t.jp:25565",
             "minecraftVersion": "1.12.2",
             "discord": {
-                "shortId": "1.12.2 Production Server",
-                "largeImageText": "WesterosCraft 1.12.2 Production Server",
+                "shortId": "1.12.2 2b2t Server",
+                "largeImageText": "1.12.2 2b2t Server",
                 "largeImageKey": "server-prod"
             },
             "mainServer": false,
@@ -278,18 +278,6 @@
                         "MD5": "ae6d0e6e873ef6c20f41097dc7fee8c6",
                         "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/jei.jar"
                     }
-                },
-                {
-                    "id": "org.blockartistry:dynsurround:1.12.2-3.6.1.0",
-                    "name": "DynamicSurroundings",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 15929762,
-                        "MD5": "1a0d50a34941865ff091a492e0612502",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/DynamicSurroundings.jar"
                     },
                     "subModules": [
                         {
@@ -315,137 +303,6 @@
                         }
                     ]
                 },
-                {
-                    "id": "orelib:orelib:3.6.0.1",
-                    "name": "OreLib 3.6.0.1",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 341728,
-                        "MD5": "00cce3b240365458adcad3e77782358a",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/OreLib.jar"
-                    }
-                },
-                {
-                    "id": "octarine-noise:betterfoliage:1.12-2.2.0",
-                    "name": "BetterFoliage",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 926081,
-                        "MD5": "e05a720c5900b9bac4e01179abe8eef6",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/BetterFoliage.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "betterfoliage.cfg",
-                            "name": "BetterFoliage Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 7878,
-                                "MD5": "6dd38f873c4129af05a2d6c500cbe954",
-                                "path": "/config/betterfoliage.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/config/betterfoliage.cfg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "forgelin:forgelin:1.8.2",
-                    "name": "Forgelin",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 5124663,
-                        "MD5": "59035365f7af35f599d1c4baade64d8b",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/Forgelin.jar"
-                    }
-                },
-                {
-                    "id": "xaeros:minimap:1.12.2-20.15.0",
-                    "name": "XaerosMinimap",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 528849,
-                        "MD5": "cc12cfe20febd1404345f5339e522cda",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/Xaeros_Minimap.jar"
-                    }
-                },
-                {
-                    "id": "horse:horse_colors:1.12.2-1.0.4",
-                    "name": "horse_colors",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 1000733,
-                        "MD5": "4ac8a7074629bb32d2fc9ad24926383d",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/horse_colors.jar"
-                    }
-                },
-                {
-                    "id": "com.github.hexomod:worldedit-cui-fe3:1.12.2-3.0.4",
-                    "name": "WorldEditCUI",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 861081,
-                        "MD5": "0807a7fcf26b50b23288daecc5ee6ae4",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/worldeditcuife.jar"
-                    }
-                },
-                {
-                    "id": "com.mumfrey:macrokeybindmod:1.12.2-2.0.3.204",
-                    "name": "Macro/Keybind Mod",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 87274,
-                        "MD5": "07577bfcc7acea868d56ad058b4b793e",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/mods/MacroKey_Keybinding.jar"
-                    }
-                },
-                {
-                    "id": "com.sonicether:seus-renewed:1.0.0",
-                    "name": "Sonic Ether's Unbelievable Shaders Renewed",
-                    "type": "File",
-                    "artifact": {
-                        "size": 7062491,
-                        "MD5": "e68cc9f8ffc8fad66583b9b2cc05356f",
-                        "path": "shaderpacks/SEUS-Renewed.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/shaderpacks/SEUS-Renewed.zip"
-                    }
-                },
-                {
-                    "id": "options.txt",
-                    "name": "Default Client Options",
-                    "type": "File",
-                    "artifact": {
-                        "size": 1973,
-                        "path": "options.txt",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/options-1.12.2.txt" 
-                    }
-                },
-                {
-                    "id": "servers.dat",
-                    "name": "Saved Client Servers",
-                    "type": "File",
-                    "artifact": {
-                        "size": 84,
-                        "MD5": "71d99e229d7d2b8d2a6423e46832a4b8",
-                        "path": "servers.dat",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.12.2/servers.dat" 
-                    }
-                }
-            ]
-        },        
         {
             "id": "WesterosCraftTest-1.12.2",
             "name": "WesterosCraft 1.12.2 Test Server",
