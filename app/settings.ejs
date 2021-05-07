@@ -8,7 +8,7 @@
                 <div id="settingsNavItemsContent">
                     <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>アカウント</button>
                     <button class="settingsNavItem" rSc="settingsTabMinecraft">Minecraft</button>
-                    <button class="settingsNavItem" rSc="settingsTabMods">Mods</button>
+                    <button class="settingsNavItem" rSc="settingsTabMods">Mod</button>
                     <button class="settingsNavItem" rSc="settingsTabJava">Java</button>
                     <button class="settingsNavItem" rSc="settingsTabLauncher">ランチャー</button>
                     <div class="settingsNavSpacer"></div>
@@ -26,7 +26,7 @@
         <div id="settingsTabAccount" class="settingsTab">
             <div class="settingsTabHeader">
                 <span class="settingsTabHeaderText">アカウント設定</span>
-                <span class="settingsTabHeaderDesc">新しいアカウントを追加するか、既存のアカウントを管理します。</span>
+                <span class="settingsTabHeaderDesc">新しいアカウントを追加、又は使用するアカウントを管理します</span>
             </div>
             <div id="settingsAddAccountContainer">
                 <button id="settingsAddAccount">
@@ -42,11 +42,11 @@
         </div>
         <div id="settingsTabMinecraft" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Minecraftの設定</span>
-                <span class="settingsTabHeaderDesc">起動に関するオプション</span>
+                <span class="settingsTabHeaderText">Minecraft設定</span>
+                <span class="settingsTabHeaderDesc">ゲームの起動に関連するオプション</span>
             </div>
             <div id="settingsGameResolutionContainer">
-                <span class="settingsFieldTitle">起動時のゲームの解像度</span>
+                <span class="settingsFieldTitle">ゲーム解像度</span>
                 <div id="settingsGameResolutionContent">
                     <input type="number" id="settingsGameWidth" min="0" cValue="GameWidth">
                     <div id="settingsGameResolutionCross">&#10006;</div>
@@ -66,7 +66,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">起動時にサーバーに自動的に接続</span>
+                    <span class="settingsFieldTitle">起動時に自動的にサーバーに接続する</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -77,8 +77,8 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">ランチャーとゲームを分別する</span>
-                    <span class="settingsFieldDesc">ゲームが切り離されていない場合、ランチャーを閉じるとゲームも閉じます。</span>
+                    <span class="settingsFieldTitle">ランチャーとゲームを分離する</span>
+                    <span class="settingsFieldDesc">オンにするとランチャーを終了するとゲームも終了します</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -87,11 +87,23 @@
                     </label>
                 </div>
             </div>
+            <div class="settingsFieldContainer">
+                <div class="settingsFieldLeft">
+                    <span class="settingsFieldTitle">設定を共有する</span>
+                    <span class="settingsFieldDesc">modパックの初回起動時に、最後に設定を変更したmodパックからMinecraftの設定をコピーします。</span>
+                </div>
+                <div class="settingsFieldRight">
+                    <label class="toggleSwitch">
+                        <input type="checkbox" cValue="optionStandardize" id="settingsOptionStandardize">
+                        <span class="toggleSwitchSlider"></span>
+                    </label>
+                </div>
+            </div>
         </div>
         <div id="settingsTabMods" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Modの設定</span>
-                <span class="settingsTabHeaderDesc">modを有効または無効にできます。</span>
+                <span class="settingsTabHeaderText">Mod設定</span>
+                <span class="settingsTabHeaderDesc">ModをON/OFFできます。</span>
             </div>
             <div id="settingsSelServContainer">
                 <div id="settingsSelServContent">
@@ -105,31 +117,31 @@
             </div>
             <div id="settingsModsContainer">
                 <div id="settingsReqModsContainer">
-                    <div class="settingsModsHeader">必須MOD</div>
+                    <div class="settingsModsHeader">必須Mod</div>
                     <div id="settingsReqModsContent">
 
                     </div>
                 </div>
                 <div id="settingsOptModsContainer">
-                    <div class="settingsModsHeader">オプションMOD</div>
+                    <div class="settingsModsHeader">オプションMod</div>
                     <div id="settingsOptModsContent">
                         
                     </div>
                 </div>
                 <div id="settingsDropinModsContainer">
-                    <div class="settingsModsHeader">ドロップIN MOD</div>
-                    <button id="settingsDropinFileSystemButton">+ modをフォルダに入れ <span id="settingsDropinRefreshNote">(F5を押してリロードしてください)</span></button>
+                    <div class="settingsModsHeader">ドロップ・イン Mod</div>
+                    <button id="settingsDropinFileSystemButton">+ Modをフォルダに入れ、<span id="settingsDropinRefreshNote">(F5を押してリロードしてください)</span></button>
                     <div id="settingsDropinModsContent">
                         
                     </div>
                 </div>
                 <div id="settingsShadersContainer">
-                    <div class="settingsModsHeader">シェーダーパック(影modに関する)OptiFine導入必須</div>
-                    <div id="settingsShaderpackDesc">シェーダーを有効 追加 管理できます。</div>
+                    <div class="settingsModsHeader">シェーダーパック</div>
+                    <div id="settingsShaderpackDesc">ShadersPackを追加・管理できます</div>
                     <div id="settingsShaderpackWrapper">
                         <button id="settingsShaderpackButton"> + </button>
                         <div class="settingsSelectContainer">
-                            <div class="settingsSelectSelected" id="settingsShadersSelected">Select Shaderpack</div>
+                            <div class="settingsSelectSelected" id="settingsShadersSelected">シェーダーパック選択</div>
                             <div class="settingsSelectOptions" id="settingsShadersOptions" hidden>
 
                             </div>
@@ -140,11 +152,11 @@
         </div>
         <div id="settingsTabJava" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">Javaの設定</span>
+                <span class="settingsTabHeaderText">Java設定</span>
                 <span class="settingsTabHeaderDesc">Javaの詳細設定</span>
             </div>
             <div id="settingsMemoryContainer">
-                <div id="settingsMemoryTitle">メモリー割り当て</div>
+                <div id="settingsMemoryTitle">メモリ割り当て</div>
                 <div id="settingsMemoryContent">
                     <div id="settingsMemoryContentLeft">
                         <div class="settingsMemoryContentItem">
@@ -154,20 +166,20 @@
                                     <div class="rangeSliderBar"></div>
                                     <div class="rangeSliderTrack"></div>
                                 </div>
-                                <span id="settingsMaxRAMLabel" class="settingsMemoryLabel">3G</span>
+                                <span id="settingsMaxRAMLabel" class="settingsMemoryLabel">4G</span>
                             </div>
                         </div>
                         <div class="settingsMemoryContentItem">
-                            <span class="settingsMemoryHeader">最低メモリー</span>
+                            <span class="settingsMemoryHeader">最低メモリ</span>
                             <div class="settingsMemoryActionContainer">
                                 <div id="settingsMinRAMRange" class="rangeSlider" cValue="MinRAM" min="3" max="8" value="3" step="0.5">
                                     <div class="rangeSliderBar"></div>
                                     <div class="rangeSliderTrack"></div>
                                 </div>
-                                <span id="settingsMinRAMLabel" class="settingsMemoryLabel">3G</span>
+                                <span id="settingsMinRAMLabel" class="settingsMemoryLabel">4G</span>
                             </div>
                         </div>
-                        <div id="settingsMemoryDesc">推奨される最小RAMは3GBです。 最小値と最大値を同じ値に設定すると、ラグが減少する場合があります。</div>
+                        <div id="settingsMemoryDesc">最低４GB以上を推奨しています。メモリが少ないとマイクラが重くなったりする原因になります。</div>
                     </div>
                     <div id="settingsMemoryContentRight">
                         <div id="settingsMemoryStatus">
@@ -184,9 +196,9 @@
                 </div>
             </div>
             <div class="settingsFileSelContainer">
-                <div class="settingsFileSelTitle">実行可能なJAVAファイル</div>
+                <div class="settingsFileSelTitle">実行可能なJavaファイル</div>
                 <div class="settingsFileSelContent">
-                    <div id="settingsJavaExecDetails">Java 8 Update 172 (x64)</div>
+                    <div id="settingsJavaExecDetails">Selected: Java 8 Update 172 (x64)</div>
                     <div class="settingsFileSelActions">
                         <div class="settingsFileSelIcon">
                             <svg class="settingsFileSelSVG" x="0px" y="0px" viewBox="0 0 305.001 305.001">
@@ -206,10 +218,10 @@
                         <button class="settingsFileSelButton" id="settingsJavaExecSel" dialogTitle="Select Java Executable" dialogDirectory="false">Choose File</button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc">Java実行可能ファイルは、ゲームの起動前に検証されます。 <strong>Java 8 X64版が必要です</strong><br>The path should end with <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong>.</div>
+                <div class="settingsFileSelDesc">実行可能なJavaファイルかをゲーム実行前に検証されます。 <strong>64ビット版Java 8が必要です。</strong><br>パスは <strong>bin<%= process.platform === 'win32' ? '\\javaw.exe' : '/java' %></strong> で終わっているはずです。</div>
             </div>
             <div id="settingsJVMOptsContainer">
-                <div id="settingsJVMOptsTitle">JAVA起動時の引数</div>
+                <div id="settingsJVMOptsTitle">Java起動時引数</div>
                 <div id="settingsJVMOptsContent">
                     <div class="settingsFileSelIcon">
                         <svg class="settingsFileSelSVG" x="0px" y="0px" viewBox="0 0 305.001 305.001">
@@ -227,18 +239,18 @@
                     </div>
                     <input id="settingsJVMOptsVal" cValue="JVMOptions" type="text">
                 </div>
-                <div id="settingsJVMOptsDesc">実行時にJVMに提供されるオプション。(わからない方は触らないことをおすすめします) <em>-Xms</em> and <em>-Xmx</em> should not be included.<br><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">引数に関してはこちら(英語版)</a>.</div>
+                <div id="settingsJVMOptsDesc">引数に関しての詳細情報は<br><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/<%= process.platform === 'win32' ? 'windows' : 'unix' %>/java.html">Available Options for Java 8 (英語)</a> をご参照ください。</div>
             </div>
         </div>
         <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText">ランチャーの設定</span>
-                <span class="settingsTabHeaderDesc">ランチャー自体に関連するオプション。</span>
+                <span class="settingsTabHeaderText">ランチャー設定</span>
+                <span class="settingsTabHeaderDesc">沼ランチャー本体の設定です</span>
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle">inside editionに切り替える</span>
-                    <span class="settingsFieldDesc">inside edition版は、完全にテストまたは統合されていない可能性のある新機能が含まれています<br>そのためデータの紛失やバグが発生し起動できなくなる可能性があります。</span>
+                    <span class="settingsFieldTitle">プレリリース版へ更新</span>
+                    <span class="settingsFieldDesc">プレリリース版はほぼ作られることはありません<br>オフにしておくことを推奨します</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -261,27 +273,27 @@
                             </svg>
                         </div>
                         <input class="settingsFileSelVal" type="text" value="null" cValue="DataDirectory" disabled>
-                        <button class="settingsFileSelButton" dialogTitle="Select Data Directory" dialogDirectory="true">Choose Folder</button>
+                        <button class="settingsFileSelButton" dialogTitle="Select Data Directory" dialogDirectory="true">保存場所を変更</button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc">すべてのゲームファイルとローカルJavaインストールは、データディレクトリに保存されます。<br>スクリーンショットとワールドセーブは、対応するサーバー構成のインスタンスフォルダーに保存されます。</div>
+                <div class="settingsFileSelDesc">このランチャーのすべてのゲームデータが保存されます<br>スクリーンショットとワールドは、各Modパックのフォルダに保存されます</div>
             </div>
         </div>
         <div id="settingsTabAbout" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
                 <span class="settingsTabHeaderText">About</span>
-                <span class="settingsTabHeaderDesc">現在のバージョンの情報とリリースノートを表示します。</span>
+                <span class="settingsTabHeaderDesc">現在のバージョンの更新履歴を見る</span>
             </div>
             <div id="settingsAboutCurrentContainer">
                 <div id="settingsAboutCurrentContent">
                     <div id="settingsAboutCurrentHeadline">
-                        <img id="settingsAboutLogo" src="./assets/images/SealCircle.png">
-                        <span id="settingsAboutTitle">OniHura Launcher</span>
+                        <img id="settingsAboutLogo" src="./assets/images/SealCircle.svg">
+                        <span id="settingsAboutTitle">沼ランチャー</span>
                     </div>
                     <div id="settingsAboutCurrentVersion">
                         <div id="settingsAboutCurrentVersionCheck">&#10003;</div>
                         <div id="settingsAboutCurrentVersionDetails">
-                            <span id="settingsAboutCurrentVersionTitle">安定版リリース (LTS)</span>
+                            <span id="settingsAboutCurrentVersionTitle">安定版リリース</span>
                             <div id="settingsAboutCurrentVersionLine">
                                 <span id="settingsAboutCurrentVersionText">Version </span>
                                 <span id="settingsAboutCurrentVersionValue">0.0.1-alpha.12</span>
@@ -290,10 +302,10 @@
                     </div>
                 </div>
                 <div id="settingsAboutButtons">
-                    <a href="https://github.com/OniHulaTeam/OniHulaLancher" id="settingsAboutSourceButton" class="settingsAboutButton">ソース (GitHub)</a>
+                    <a href="https://github.com/TeamKun/NumaLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">ソース (GitHub)</a>
                     <!-- The following must be included in third-party usage. -->
-                    <!-- <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
-                    <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSupportButton" class="settingsAboutButton">Original Source</a>
+                    <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a>
+                    <a href="https://github.com/TeamKun/NumaLauncher/issues" id="settingsAboutSupportButton" class="settingsAboutButton">サポート</a>
                     <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton">DevTools Console</a>
                 </div>
             </div>
@@ -301,31 +313,32 @@
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
                         <div class="settingsChangelogLabel">変更点</div>
-                        <div class="settingsChangelogTitle">Changelog</div>
+                        <div class="settingsChangelogTitle">アップデートの変更内容</div>
                     </div>
                     <div class="settingsChangelogText">
-                        変更点はありません
+                        更新履歴はありません
                     </div>
                 </div>
                 <div class="settingsChangelogActions">
-                    <a class="settingsChangelogButton settingsAboutButton" href="#">GitHubでリリースノートを見る</a>
+                    <a class="settingsChangelogButton settingsAboutButton" href="#">GitHubでアップデート内容を見る</a>
                 </div>
             </div>
         </div>
         <div id="settingsTabUpdate" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
                 <span class="settingsTabHeaderText">ランチャーの更新</span>
-                <span class="settingsTabHeaderDesc">ランチャーの更新をダウンロード、インストール、およびを行います。</span>
+                <span class="settingsTabHeaderDesc">ランチャーのアップデートを行います。</span>
             </div>
             <div id="settingsUpdateStatusContainer">
                 <div id="settingsUpdateStatusContent">
                     <div id="settingsUpdateStatusHeadline">
-                        <span id="settingsUpdateTitle">ご使用のランチャーは最新版です</span>
+                        <span id="settingsUpdateTitle">現在のランチャーは最新版です</span>
+                        <span id="settingsUpdateTitleVersion">(v<%=appver%>)</span>
                     </div>
                     <div id="settingsUpdateVersion">
                         <div id="settingsUpdateVersionCheck">&#10003;</div>
                         <div id="settingsUpdateVersionDetails">
-                            <span id="settingsUpdateVersionTitle">安定版リリース (LTS)</span>
+                            <span id="settingsUpdateVersionTitle">安定版リリース</span>
                             <div id="settingsUpdateVersionLine">
                                 <span id="settingsUpdateVersionText">Version </span>
                                 <span id="settingsUpdateVersionValue">0.0.1-alpha.18</span>
@@ -333,18 +346,18 @@
                         </div>
                     </div>
                     <div id="settingsUpdateActionContainer">
-                        <button id="settingsUpdateActionButton">アップデートを確認する</button>
+                        <button id="settingsUpdateActionButton">アップデートをチェックする</button>
                     </div>
                 </div>
             </div>
             <div class="settingsChangelogContainer">
                 <div class="settingsChangelogContent">
                     <div class="settingsChangelogHeadline">
-                        <div class="settingsChangelogLabel">新着情報</div>
-                        <div class="settingsChangelogTitle">リリースノートの更新</div>
+                        <div class="settingsChangelogLabel">変更点</div>
+                        <div class="settingsChangelogTitle">アップデートの変更内容</div>
                     </div>
                     <div class="settingsChangelogText">
-                        リリースノートなし
+                        更新履歴はありません
                     </div>
                 </div>
             </div>
